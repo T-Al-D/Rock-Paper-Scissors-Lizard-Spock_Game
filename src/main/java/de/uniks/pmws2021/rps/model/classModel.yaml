@@ -1,0 +1,126 @@
+- c: 	ClassModel
+  classes: 	game 	player
+  defaultCollectionType: 	c1
+  defaultPropertyStyle: 	Bean
+  defaultRoleType: 	"java.util.ArrayList<%s>"
+  mainJavaDir: 	"src/main/java"
+  packageName: 	de.uniks.pmws2021.rps.model
+  packageSrcFolder: 	"src/main/java/de/uniks/pmws2021/rps/model"
+
+- game: 	Clazz
+  attributes: 	game_gameModeExtension 	game_maxRounds 	game_currentRound 	game_bestOf
+  model: 	c
+  modified: 	false
+  name: 	Game
+  propertyStyle: 	Bean
+  roles: 	game_players
+
+- player: 	Clazz
+  attributes: 	player_playerName 	player_currentMove 	player_winnings 	player_victory
+  model: 	c
+  modified: 	false
+  name: 	Player
+  propertyStyle: 	Bean
+  roles: 	player_game
+
+- c1: 	CollectionType
+  implClass: 	class java.util.ArrayList
+  implTemplate: 	"java.util.ArrayList<%s>"
+  itf: 	org.fulib.classmodel.CollectionInterface.List
+  qualifiedImplName: 	java.util.ArrayList
+  simpleImplName: 	ArrayList
+
+- game_gameModeExtension: 	Attribute
+  clazz: 	game
+  id: 	Game_gameModeExtension
+  modified: 	false
+  name: 	gameModeExtension
+  propertyStyle: 	Bean
+  type: 	Boolean
+  typeSignature: 	Boolean
+
+- game_maxRounds: 	Attribute
+  clazz: 	game
+  id: 	Game_maxRounds
+  modified: 	false
+  name: 	maxRounds
+  propertyStyle: 	Bean
+  type: 	int
+  typeSignature: 	int
+
+- game_currentRound: 	Attribute
+  clazz: 	game
+  id: 	Game_currentRound
+  modified: 	false
+  name: 	currentRound
+  propertyStyle: 	Bean
+  type: 	int
+  typeSignature: 	int
+
+- game_bestOf: 	Attribute
+  clazz: 	game
+  id: 	Game_bestOf
+  modified: 	false
+  name: 	bestOf
+  propertyStyle: 	Bean
+  type: 	boolean
+  typeSignature: 	boolean
+
+- game_players: 	AssocRole
+  aggregation: 	false
+  cardinality: 	42
+  clazz: 	game
+  collectionType: 	c1
+  id: 	Game_players
+  modified: 	false
+  name: 	players
+  other: 	player_game
+  propertyStyle: 	Bean
+  roleType: 	"java.util.ArrayList<%s>"
+
+- player_playerName: 	Attribute
+  clazz: 	player
+  id: 	Player_playerName
+  modified: 	false
+  name: 	playerName
+  propertyStyle: 	Bean
+  type: 	String
+  typeSignature: 	String
+
+- player_currentMove: 	Attribute
+  clazz: 	player
+  id: 	Player_currentMove
+  modified: 	false
+  name: 	currentMove
+  propertyStyle: 	Bean
+  type: 	String
+  typeSignature: 	String
+
+- player_winnings: 	Attribute
+  clazz: 	player
+  id: 	Player_winnings
+  modified: 	false
+  name: 	winnings
+  propertyStyle: 	Bean
+  type: 	int
+  typeSignature: 	int
+
+- player_victory: 	Attribute
+  clazz: 	player
+  id: 	Player_victory
+  modified: 	false
+  name: 	victory
+  propertyStyle: 	Bean
+  type: 	Boolean
+  typeSignature: 	Boolean
+
+- player_game: 	AssocRole
+  aggregation: 	false
+  cardinality: 	1
+  clazz: 	player
+  id: 	Player_game
+  modified: 	false
+  name: 	game
+  other: 	game_players
+  propertyStyle: 	Bean
+

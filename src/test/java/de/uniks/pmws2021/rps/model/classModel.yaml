@@ -1,0 +1,39 @@
+- c: 	ClassModel
+  classes: 	scenarioTest
+  defaultCollectionType: 	c1
+  defaultPropertyStyle: 	Bean
+  defaultRoleType: 	"java.util.ArrayList<%s>"
+  mainJavaDir: 	"src/test/java"
+  packageName: 	de.uniks.pmws2021.rps.model
+  packageSrcFolder: 	"src/test/java/de/uniks/pmws2021/rps/model"
+
+- scenarioTest: 	Clazz
+  importList: 	org.junit.Test
+  imports: 	org.junit.Test
+  methods: 	scenarioTest_myFirstScenario
+  model: 	c
+  modified: 	false
+  name: 	ScenarioTest
+  propertyStyle: 	Bean
+
+- c1: 	CollectionType
+  implClass: 	class java.util.ArrayList
+  implTemplate: 	"java.util.ArrayList<%s>"
+  itf: 	org.fulib.classmodel.CollectionInterface.List
+  qualifiedImplName: 	java.util.ArrayList
+  simpleImplName: 	ArrayList
+
+- scenarioTest_myFirstScenario: 	FMethod
+  annotations: 	"@Test"
+  clazz: 	scenarioTest
+  declaration: 	"@Test
+   public void myFirstScenario()"
+  id: 	ScenarioTest_myFirstScenario
+  methodBody: 	""
+  modified: 	false
+  modifiers: 	public
+  name: 	myFirstScenario
+  paramsString: 	""
+  returnType: 	void
+  signature: 	"class/ScenarioTest/method/myFirstScenario()"
+
