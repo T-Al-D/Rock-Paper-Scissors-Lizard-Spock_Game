@@ -1,4 +1,4 @@
-This was a bonus assignment.
+This was a bonus assignment (Uni Kassel, Germany).
 
 I liked how it turned out, therefore I wanted to share it.
 
