@@ -1,4 +1,5 @@
-Hallo,
+This was a bonus assignment.
 
-damit keine Verwirrung besteht: Die gitignore exestiert von anfang an,
-ich habe diese lediglich aktualisiert.
+I liked how it turned out, therefore I waned to share it.
+
+Please start in Launer or StatemangerClass and have fun against a the Computer !
